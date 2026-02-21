@@ -2,6 +2,8 @@
 
 A side-by-side demonstration of Claude AI controlling Super Mario Bros Level 1-1, comparing two agent configurations: one with structured knowledge and one working from raw source code alone.
 
+https://github.com/user-attachments/assets/751c26c3-9e4c-4dfb-9e94-e034cc208642
+
 ## What This Shows
 
 Both agents get identical tools and the same game. The difference is entirely in what you put in the system prompt.
