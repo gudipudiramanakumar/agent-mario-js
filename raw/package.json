@@ -1,0 +1,13 @@
+{
+  "name": "mario-agent-demo-raw",
+  "version": "1.0.0",
+  "description": "Mario Agent Demo — Raw Agent (no CLAUDE.md, no .claude/)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@anthropic-ai/sdk": "^0.27.0",
+    "dotenv": "^16.4.5"
+  }
+}

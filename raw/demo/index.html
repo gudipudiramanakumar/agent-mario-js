@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mario Agent Demo — Raw (No CLAUDE.md)</title>
+  <link rel="stylesheet" href="/demo/demo.css" />
+</head>
+<body>
+
+  <header class="demo-header">
+    <div class="header-title">
+      <span class="header-game">🎮</span>
+      <h1>Mario Agent Demo</h1>
+      <span class="header-tagline">Raw — no <code>CLAUDE.md</code>, no skills, no navigator</span>
+    </div>
+    <div class="header-controls">
+      <button id="reset-game" class="btn-reset">↺ Reset</button>
+    </div>
+  </header>
+
+  <div class="demo-layout">
+    <div class="panel panel-raw" id="panel-game">
+
+      <div class="panel-header">
+        <div class="panel-label raw">
+          <span class="label-icon">⚠</span>
+          <strong>Raw Agent</strong>
+        </div>
+        <div class="panel-subtitle">No CLAUDE.md — game source code only</div>
+        <span class="token-counter" id="token-count"></span>
+      </div>
+
+      <!-- game left | chat right -->
+      <div class="panel-body">
+
+        <div class="game-frame-wrapper">
+          <iframe
+            id="iframe-game"
+            src="/play"
+            title="Raw agent game"
+            scrolling="no"
+            sandbox="allow-scripts allow-same-origin"
+          ></iframe>
+        </div>
+
+        <div class="chat-column">
+          <div class="chat-area">
+            <div class="messages" id="messages-game"></div>
+          </div>
+          <div class="preset-row">
+            <span class="prompt-label">Try:</span>
+            <button class="preset-btn" data-prompt="Where is Mario right now?">Where is Mario?</button>
+            <button class="preset-btn" data-prompt="Stomp the Goomba">Stomp Goomba</button>
+            <button class="preset-btn" data-prompt="Jump under the special block to get the mushroom">Get mushroom</button>
+            <button class="preset-btn" data-prompt="Go to the flagpole">Go to flag</button>
+          </div>
+          <div class="input-area">
+            <input
+              type="text"
+              id="input-game"
+              class="chat-input"
+              placeholder="Type a command for the raw agent…"
+              autocomplete="off"
+            />
+            <button class="btn-send" id="send-game">Send</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/demo/demo.js"></script>
+</body>
+</html>

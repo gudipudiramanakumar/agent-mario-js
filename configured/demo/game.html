@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mario</title>
+  <link href="/game/assets/css/reset.css" rel="stylesheet" />
+  <link href="/game/assets/css/stylesheet.css" rel="stylesheet" />
+  <style>
+    body { background: #5c94fc; margin: 0; overflow: hidden; }
+    .main { display: flex; justify-content: center; align-items: center; height: 100vh; }
+    canvas { display: block; }
+    /* Hide the original page chrome — only show the canvas */
+    .description, .contact { display: none !important; }
+    #mute-button { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <canvas id="game-canvas" width="760" height="600"></canvas>
+    <audio id="background_music" muted loop>
+      <source src="/game/assets/audio/music/mario_theme.mp3" type="audio/mp3" />
+    </audio>
+    <div id="mute-button"></div>
+  </div>
+
+  <script src="/game/assets/javascripts/jquery.min.js"></script>
+  <!-- game bundle is served from /game-configured or /game-raw depending on the panel -->
+  <script src="bundle.js"></script>
+  <script src="/demo/state_renderer.js"></script>
+  <script src="/demo/gameAPI.js"></script>
+</body>
+</html>

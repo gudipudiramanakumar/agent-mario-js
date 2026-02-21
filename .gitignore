@@ -1,0 +1,16 @@
+# Dependencies
+**/node_modules/
+
+# Environment variables (contain API keys — never commit)
+**/.env
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Logs
+*.log
+**/logs/
+
+# Claude local settings (machine-specific)
+**/.claude/settings.local.json
